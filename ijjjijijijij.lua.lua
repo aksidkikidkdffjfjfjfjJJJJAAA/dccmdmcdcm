@@ -500,8 +500,8 @@ end
 
 function showSettingMenu()
     local opts = {
-        "バックアップ保存",
-        "バックアップ復元",
+        "機能保存",
+        "機能バックアップ復元",
         "戻る"
     }
     local sel = gg.choice(opts, nil, "〖Setting Menu〗")
@@ -521,7 +521,7 @@ function mainMenu()
             "〖Setting Menu〗",
             "〖_EXIT_〗"
         }
-        local sel = gg.choice(opts, nil, "ツムツムスクリプト by TAPI\nv11.7.2")
+        local sel = gg.choice(opts, nil, "ツムツムスクリプト by TAPI\n使用期限は無限(数値パターンが変われば使えなくなります)")
         if sel == nil then return end
         if sel == 1 then showFeatureMenu(gamespeedFeatures, "〖GAME Speed Menu〗")
         elseif sel == 2 then showFeatureMenu(coinFeatures, "〖TIME Speed Menu〗")
@@ -540,7 +540,7 @@ end
 
 auth()
 base = getLibBase(libName)
-gg.alert("✅ パスワード認証成功\n\n更新日:2025.7.11日\n\nお知らせ͛📢\n\nスクリプトを使用する前にGGのアイコンを押し左上のツムツムアイコンの1つ右にあるバーマークを押しPtrace保護のためのバイパスモードを押し何も無いに変更してください")
+gg.alert("✅ パスワード認証成功\n\n更新日:2025.7.31日\n\nお知らせ͛📢\n\nスクリプトを使用する前にGGのアイコンを押し左上のツムツムアイコンの1つ右にあるバーマークを押しPtrace保護のためのバイパスモードを押し何も無いに変更してください")
 
 while true do
     if gg.isVisible(true) then
